@@ -1,20 +1,20 @@
 <template>
- <a-layout>
-     <the-header></the-header>
-     <router-view/>
-     <a-layout-footer style="text-align: center">
-       Allen 電子書
-     </a-layout-footer>
-   </a-layout>
+  <a-layout>
+    <the-header></the-header>
+    <router-view/>
+    <the-footer></the-footer>
+  </a-layout>
 </template>
 
 <script lang="ts">
   import TheHeader from '@/components/the-header.vue'
+  import TheFooter from '@/components/the-footer.vue'
   import { defineComponent, ref } from 'vue';
   export default defineComponent({
     name: 'app',
     components: {
       TheHeader,
+      TheFooter,
     },
   });
 </script>
